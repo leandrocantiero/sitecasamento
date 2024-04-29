@@ -1,5 +1,5 @@
 <script setup>
-import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCounterCard.vue";
+import DefaultCounterCardDate from "../../../examples/cards/counterCards/DefaultCounterCardDate.vue";
 </script>
 
 <template>
@@ -7,41 +7,17 @@ import DefaultCounterCard from "../../../examples/cards/counterCards/DefaultCoun
     <div class="container">
       <div class="row">
         <div class="col-lg-9 z-index-2 border-radius-xl mx-auto py-3">
-          <div class="row">
-            <div class="col-md-4 position-relative">
-              <DefaultCounterCard
-                color="success"
-                title="Coded Elements"
-                description="From buttons, to inputs, navbars, alerts or cards, you are
-                  covered"
-                :count="70"
-                suffix="+"
-                :duration="3000"
-                divider="vertical"
-              />
-            </div>
-            <div class="col-md-4 position-relative">
-              <DefaultCounterCard
-                color="success"
-                title="Design Blocks"
-                description="Mix the sections, change the colors and unleash your
-                  creativity"
-                :count="15"
-                suffix="+"
-                :duration="3000"
-                divider="vertical"
-              />
-            </div>
-            <div class="col-md-4">
-              <DefaultCounterCard
-                color="success"
-                title="Pages"
-                description="Save 3-4 weeks of work when you use our pre-made pages for
-                  your website"
-                :count="4"
-                :duration="3000"
-              />
-            </div>
+          <div class="row align-content-center">
+            <span class="text-center my-4">Vamos nos casar em</span>
+
+            <DefaultCounterCardDate
+              color="success"
+              :year="2025"
+              month="Fevereiro"
+              :day="8"
+              :duration="3000" />
+
+            <span class="text-center my-4">Estaremos esperando por você!</span>
           </div>
         </div>
       </div>

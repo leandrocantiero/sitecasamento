@@ -39,8 +39,12 @@ defineProps({
     type: Boolean,
     default: false,
   },
+  loading: {
+    type: Boolean,
+    default: false,
+  },
 });
-function getClasses(variant, color, size, fullWidth, disabled) {
+function getClasses(variant, color, size, fullWidth, disabled, loading) {
   let colorValue, sizeValue, fullWidthValue, activeValue;
 
   // Setting the button variant and color
@@ -56,7 +60,7 @@ function getClasses(variant, color, size, fullWidth, disabled) {
 
   fullWidthValue = fullWidth && `w-100`;
 
-  activeValue = disabled && `disabled`;
+  activeValue = (disabled || loading) && `disabled`;
 
   return `${colorValue} ${sizeValue} ${fullWidthValue} ${activeValue}`;
 }
@@ -64,8 +68,27 @@ function getClasses(variant, color, size, fullWidth, disabled) {
 <template>
   <button
     class="btn"
-    :class="getClasses(variant, color, size, fullWidth, disabled)"
+    :class="getClasses(variant, color, size, fullWidth, disabled, loading)"
   >
-    <slot />
+    <slot v-if="!loading" />
+    <i v-else class="material-icons spinner md-48">refresh</i>
   </button>
 </template>
+
+<style>
+.spinner {
+  animation-name: spin;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}
+</style>

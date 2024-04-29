@@ -41,7 +41,7 @@ export default {
 };
 </script>
 <template>
-  <RouterLink :to="{ name: route }">
+  <a :href="route" target="_blank">
     <div
       class="card move-on-hover"
       v-bind="$attrs"
@@ -94,5 +94,5 @@ export default {
         {{ subtitle }}
       </p>
     </div>
-  </RouterLink>
+  </a>
 </template>

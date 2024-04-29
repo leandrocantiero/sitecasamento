@@ -67,6 +67,19 @@ const getTextColor = () => {
   return color;
 };
 
+const getIconsColor = () => {
+  let color;
+  if (props.transparent && textDark.value) {
+    color = "text-dark";
+  } else if (props.transparent) {
+    color = "text-dark";
+  } else {
+    color = "text-dark";
+  }
+
+  return color;
+};
+
 // set nav color on mobile && desktop
 
 let textDark = ref(props.darkText);
@@ -196,28 +209,28 @@ watch(
                     </div>
                     <div class="position-relative">
                       <RouterLink
-                        :to="{ name: 'about' }"
+                        :to="{ name: 'party' }"
                         class="dropdown-item border-radius-md"
                       >
                         <i
                           class="material-icons opacity-6 me-2 text-md"
-                          :class="getTextColor()"
+                          :class="getIconsColor()"
                         >
                           celebration
                         </i>
                         <span>Festa</span>
                       </RouterLink>
                       <RouterLink
-                        :to="{ name: 'about' }"
+                        :to="{ name: 'ceremony' }"
                         class="dropdown-item border-radius-md"
                       >
                         <i
                           class="material-icons opacity-6 me-2 text-md"
-                          :class="getTextColor()"
+                          :class="getIconsColor()"
                         >
                           church
                         </i>
-                        <span>Cerim鬾ia</span>
+                        <span>Cerim么nia</span>
                       </RouterLink>
                       <RouterLink
                         :to="{ name: 'contactus' }"
@@ -225,11 +238,11 @@ watch(
                       >
                         <i
                           class="material-icons opacity-6 me-2 text-md"
-                          :class="getTextColor()"
+                          :class="getIconsColor()"
                         >
                           people
                         </i>
-                        <span>N髎</span>
+                        <span>N贸s</span>
                       </RouterLink>
                     </div>
                   </div>
@@ -242,28 +255,28 @@ watch(
                   Sobre
                 </div>
                 <RouterLink
-                    :to="{ name: 'about' }"
+                    :to="{ name: 'party' }"
                     class="dropdown-item border-radius-md"
                 >
                   <i
                       class="material-icons opacity-6 me-2 text-md"
-                      :class="getTextColor()"
+                      :class="getIconsColor()"
                   >
                     celebration
                   </i>
                   <span>Festa</span>
                 </RouterLink>
                 <RouterLink
-                    :to="{ name: 'about' }"
+                    :to="{ name: 'ceremony' }"
                     class="dropdown-item border-radius-md"
                 >
                   <i
                       class="material-icons opacity-6 me-2 text-md"
-                      :class="getTextColor()"
+                      :class="getIconsColor()"
                   >
                     church
                   </i>
-                  <span>Cerim鬾ia</span>
+                  <span>Cerim么nia</span>
                 </RouterLink>
                 <RouterLink
                     :to="{ name: 'contactus' }"
@@ -271,11 +284,11 @@ watch(
                 >
                   <i
                       class="material-icons opacity-6 me-2 text-md"
-                      :class="getTextColor()"
+                      :class="getIconsColor()"
                   >
                     people
                   </i>
-                  <span>N髎</span>
+                  <span>N贸s</span>
                 </RouterLink>
               </div>
             </div>
@@ -320,12 +333,12 @@ watch(
                     </div>
                     <div class="position-relative">
                       <RouterLink
-                        :to="{ name: 'about' }"
+                        :to="{ name: 'gift' }"
                         class="dropdown-item border-radius-md"
                       >
                         <i
                           class="material-icons opacity-6 me-2 text-md"
-                          :class="getTextColor()"
+                          :class="getIconsColor()"
                         >
                           format_list_bulleted
                         </i>
@@ -337,7 +350,7 @@ watch(
                       >
                         <i
                           class="material-icons opacity-6 me-2 text-md"
-                          :class="getTextColor()"
+                          :class="getIconsColor()"
                         >
                           dark_mode
                         </i>
@@ -354,12 +367,12 @@ watch(
                   Presentes
                 </div>
                 <RouterLink
-                    :to="{ name: 'about' }"
+                    :to="{ name: 'gift' }"
                     class="dropdown-item border-radius-md"
                 >
                   <i
                       class="material-icons opacity-6 me-2 text-md"
-                      :class="getTextColor()"
+                      :class="getIconsColor()"
                   >
                     format_list_bulleted
                   </i>
@@ -371,7 +384,7 @@ watch(
                 >
                   <i
                       class="material-icons opacity-6 me-2 text-md"
-                      :class="getTextColor()"
+                      :class="getIconsColor()"
                   >
                     dark_mode
                   </i>
@@ -380,22 +393,22 @@ watch(
               </div>
             </div>
           </li>
+<!--          <li class="nav-item dropdown dropdown-hover mx-2">-->
+<!--            <RouterLink-->
+<!--              :to="{ name: 'contactus' }"-->
+<!--              class="nav-link d-flex cursor-pointer align-items-center"-->
+<!--            >-->
+<!--              <i-->
+<!--                class="material-icons opacity-6 me-2 text-md"-->
+<!--                :class="getTextColor()"-->
+<!--                >image</i-->
+<!--              >-->
+<!--              Galeria-->
+<!--            </RouterLink>-->
+<!--          </li>-->
           <li class="nav-item dropdown dropdown-hover mx-2">
             <RouterLink
-              :to="{ name: 'contactus' }"
-              class="nav-link d-flex cursor-pointer align-items-center"
-            >
-              <i
-                class="material-icons opacity-6 me-2 text-md"
-                :class="getTextColor()"
-                >image</i
-              >
-              Galeria
-            </RouterLink>
-          </li>
-          <li class="nav-item dropdown dropdown-hover mx-2">
-            <RouterLink
-              :to="{ name: 'contactus' }"
+              :to="{ name: 'confirmation' }"
               class="nav-link d-flex cursor-pointer align-items-center"
             >
               <i
@@ -403,7 +416,7 @@ watch(
                 :class="getTextColor()"
                 >done</i
               >
-              Confirmar presen鏰
+              Confirmar presen莽a
             </RouterLink>
           </li>
         </ul>

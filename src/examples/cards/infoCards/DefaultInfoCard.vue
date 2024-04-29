@@ -25,6 +25,16 @@ defineProps({
     text: String,
     class: String,
   },
+  linkText: {
+    type: [String, Object],
+    text: String,
+    class: String,
+  },
+  linkUrl: {
+    type: [String, Object],
+    text: String,
+    class: String,
+  },
   col: {
     type: String,
     default: "",
@@ -59,6 +69,9 @@ export default {
       </h5>
       <p :class="typeof description == 'string' ? 'pe-5' : description.class">
         {{ typeof description == "string" ? description : description.text }}
+        <span v-if="linkUrl">
+          <a :href="linkUrl" target="_blank">{{ linkText }}</a>
+        </span>
       </p>
     </div>
   </div>

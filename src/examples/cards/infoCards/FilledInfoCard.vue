@@ -32,15 +32,16 @@ defineProps({
   },
   title: {
     type: String,
-    required: true,
   },
   description: {
     type: String,
     required: true,
   },
+  descriptionClass: {
+    type: String,
+  },
   action: {
     type: Object,
-    required: true,
     label: {
       type: Object,
       required: true,
@@ -59,22 +60,24 @@ defineProps({
     class="info-horizontal border-radius-xl d-block d-md-flex"
     :class="`${color.background ?? ''}`"
   >
-    <i class="material-icons text-3xl" :class="`text-${icon.color}`">{{
+    <i class="material-icons" :class="`text-${icon.color}`">{{
       icon.component
     }}</i>
     <div class="ps-0 ps-md-3 mt-3 mt-md-0">
-      <h5 :class="`text-${color.text ?? ''}`">{{ title }}</h5>
-      <p :class="`text-${color.text ?? ''}`">
+      <h5 v-if="title" :class="`text-${color.text ?? ''}`">{{ title }}</h5>
+      <p :class="`text-${color.text ?? ''} ${descriptionClass}`">
         {{ description }}
       </p>
-      <a
-        :href="action.route"
-        class="icon-move-right"
-        :class="`text-${action.label.color ?? 'success'}`"
-      >
-        {{ action.label.text }}
-        <i class="fas fa-arrow-right text-sm ms-1"></i>
-      </a>
+      <div v-if="action">
+        <a
+            :href="action.route"
+            class="icon-move-right"
+            :class="`text-${action.label.color ?? 'success'}`"
+        >
+          {{ action.label.text }}
+          <i class="fas fa-arrow-right text-sm ms-1"></i>
+        </a>
+      </div>
     </div>
   </div>
 </template>

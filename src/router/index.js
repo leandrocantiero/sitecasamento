@@ -4,6 +4,11 @@ import AboutView from "../views/LandingPages/AboutUs/AboutView.vue";
 import ContactView from "../views/LandingPages/ContactUs/ContactView.vue";
 import AuthorView from "../views/LandingPages/Author/AuthorView.vue";
 import SignInBasicView from "../views/LandingPages/SignIn/BasicView.vue";
+import ConfirmationView from "../views/LandingPages/Confirmation/ConfirmationView.vue";
+import PartyView from "../views/LandingPages/Party/PartyView.vue";
+import CeremonyView from "../views/LandingPages/Ceremony/CeremonyView.vue";
+import GiftView from "../views/LandingPages/Gift/GiftView.vue";
+
 import PageHeaders from "../layouts/sections/page-sections/page-headers/HeadersView.vue";
 import PageFeatures from "../layouts/sections/page-sections/features/FeaturesView.vue";
 import NavigationNavbars from "../layouts/sections/navigation/navbars/NavbarsView.vue";
@@ -23,13 +28,33 @@ import ElDropdowns from "../layouts/sections/elements/dropdowns/DropdownsView.vu
 import ElProgressBars from "../layouts/sections/elements/progress-bars/ProgressBarsView.vue";
 import ElToggles from "../layouts/sections/elements/toggles/TogglesView.vue";
 import ElTypography from "../layouts/sections/elements/typography/TypographyView.vue";
-const router = createRouter({
+  const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
       name: "presentation",
       component: PresentationView,
+    },
+    {
+      path: "/pages/landing-pages/confirmation",
+      name: "confirmation",
+      component: ConfirmationView,
+    },
+    {
+      path: "/pages/landing-pages/party",
+      name: "party",
+      component: PartyView,
+    },
+    {
+      path: "/pages/landing-pages/ceremony",
+      name: "ceremony",
+      component: CeremonyView,
+    },
+    {
+      path: "/pages/landing-pages/gift",
+      name: "gift",
+      component: GiftView,
     },
     {
       path: "/pages/landing-pages/about-us",
