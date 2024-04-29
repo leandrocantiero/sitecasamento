@@ -293,106 +293,106 @@ watch(
               </div>
             </div>
           </li>
-          <li class="nav-item dropdown dropdown-hover mx-2">
-            <a
-              role="button"
-              class="nav-link ps-2 d-flex cursor-pointer align-items-center"
-              :class="getTextColor()"
-              id="dropdownMenuPages"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <i
-                class="material-icons opacity-6 me-2 text-md"
-                :class="getTextColor()"
-                >card_giftcard</i
-              >
-              Presentes
-              <img
-                :src="getArrowColor()"
-                alt="down-arrow"
-                class="arrow ms-2 d-lg-block d-none"
-              />
-              <img
-                :src="getArrowColor()"
-                alt="down-arrow"
-                class="arrow ms-1 d-lg-none d-block ms-auto"
-              />
-            </a>
-            <div
-              class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"
-              aria-labelledby="dropdownMenuPages"
-            >
-              <div class="row d-none d-lg-block">
-                <div class="col-12 px-4 py-2">
-                  <div class="row">
-                    <div
-                      class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0"
-                    >
-                      Presentes
-                    </div>
-                    <div class="position-relative">
-                      <RouterLink
-                        :to="{ name: 'gift' }"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <i
-                          class="material-icons opacity-6 me-2 text-md"
-                          :class="getIconsColor()"
-                        >
-                          format_list_bulleted
-                        </i>
-                        <span>Lista de presentes</span>
-                      </RouterLink>
-                      <RouterLink
-                        :to="{ name: 'about' }"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <i
-                          class="material-icons opacity-6 me-2 text-md"
-                          :class="getIconsColor()"
-                        >
-                          dark_mode
-                        </i>
-                        <span>Lua de mel</span>
-                      </RouterLink>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="d-lg-none">
-                <div
-                  class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0"
-                >
-                  Presentes
-                </div>
-                <RouterLink
-                    :to="{ name: 'gift' }"
-                    class="dropdown-item border-radius-md"
-                >
-                  <i
-                      class="material-icons opacity-6 me-2 text-md"
-                      :class="getIconsColor()"
-                  >
-                    format_list_bulleted
-                  </i>
-                  <span>Lista de presentes</span>
-                </RouterLink>
-                <RouterLink
-                    :to="{ name: 'about' }"
-                    class="dropdown-item border-radius-md"
-                >
-                  <i
-                      class="material-icons opacity-6 me-2 text-md"
-                      :class="getIconsColor()"
-                  >
-                    dark_mode
-                  </i>
-                  <span>Lua de mel</span>
-                </RouterLink>
-              </div>
-            </div>
-          </li>
+<!--          <li class="nav-item dropdown dropdown-hover mx-2">-->
+<!--            <a-->
+<!--              role="button"-->
+<!--              class="nav-link ps-2 d-flex cursor-pointer align-items-center"-->
+<!--              :class="getTextColor()"-->
+<!--              id="dropdownMenuPages"-->
+<!--              data-bs-toggle="dropdown"-->
+<!--              aria-expanded="false"-->
+<!--            >-->
+<!--              <i-->
+<!--                class="material-icons opacity-6 me-2 text-md"-->
+<!--                :class="getTextColor()"-->
+<!--                >card_giftcard</i-->
+<!--              >-->
+<!--              Presentes-->
+<!--              <img-->
+<!--                :src="getArrowColor()"-->
+<!--                alt="down-arrow"-->
+<!--                class="arrow ms-2 d-lg-block d-none"-->
+<!--              />-->
+<!--              <img-->
+<!--                :src="getArrowColor()"-->
+<!--                alt="down-arrow"-->
+<!--                class="arrow ms-1 d-lg-none d-block ms-auto"-->
+<!--              />-->
+<!--            </a>-->
+<!--            <div-->
+<!--              class="dropdown-menu dropdown-menu-animation ms-n3 dropdown-md p-3 border-radius-xl mt-0 mt-lg-3"-->
+<!--              aria-labelledby="dropdownMenuPages"-->
+<!--            >-->
+<!--              <div class="row d-none d-lg-block">-->
+<!--                <div class="col-12 px-4 py-2">-->
+<!--                  <div class="row">-->
+<!--                    <div-->
+<!--                      class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0"-->
+<!--                    >-->
+<!--                      Presentes-->
+<!--                    </div>-->
+<!--                    <div class="position-relative">-->
+<!--                      <RouterLink-->
+<!--                        :to="{ name: 'gift' }"-->
+<!--                        class="dropdown-item border-radius-md"-->
+<!--                      >-->
+<!--                        <i-->
+<!--                          class="material-icons opacity-6 me-2 text-md"-->
+<!--                          :class="getIconsColor()"-->
+<!--                        >-->
+<!--                          format_list_bulleted-->
+<!--                        </i>-->
+<!--                        <span>Lista de presentes</span>-->
+<!--                      </RouterLink>-->
+<!--                      <RouterLink-->
+<!--                        :to="{ name: 'about' }"-->
+<!--                        class="dropdown-item border-radius-md"-->
+<!--                      >-->
+<!--                        <i-->
+<!--                          class="material-icons opacity-6 me-2 text-md"-->
+<!--                          :class="getIconsColor()"-->
+<!--                        >-->
+<!--                          dark_mode-->
+<!--                        </i>-->
+<!--                        <span>Lua de mel</span>-->
+<!--                      </RouterLink>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="d-lg-none">-->
+<!--                <div-->
+<!--                  class="dropdown-header text-dark font-weight-bolder d-flex align-items-center px-0"-->
+<!--                >-->
+<!--                  Presentes-->
+<!--                </div>-->
+<!--                <RouterLink-->
+<!--                    :to="{ name: 'gift' }"-->
+<!--                    class="dropdown-item border-radius-md"-->
+<!--                >-->
+<!--                  <i-->
+<!--                      class="material-icons opacity-6 me-2 text-md"-->
+<!--                      :class="getIconsColor()"-->
+<!--                  >-->
+<!--                    format_list_bulleted-->
+<!--                  </i>-->
+<!--                  <span>Lista de presentes</span>-->
+<!--                </RouterLink>-->
+<!--                <RouterLink-->
+<!--                    :to="{ name: 'about' }"-->
+<!--                    class="dropdown-item border-radius-md"-->
+<!--                >-->
+<!--                  <i-->
+<!--                      class="material-icons opacity-6 me-2 text-md"-->
+<!--                      :class="getIconsColor()"-->
+<!--                  >-->
+<!--                    dark_mode-->
+<!--                  </i>-->
+<!--                  <span>Lua de mel</span>-->
+<!--                </RouterLink>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </li>-->
 <!--          <li class="nav-item dropdown dropdown-hover mx-2">-->
 <!--            <RouterLink-->
 <!--              :to="{ name: 'contactus' }"-->
@@ -406,6 +406,19 @@ watch(
 <!--              Galeria-->
 <!--            </RouterLink>-->
 <!--          </li>-->
+          <li class="nav-item dropdown dropdown-hover mx-2">
+            <RouterLink
+              :to="{ name: 'gift' }"
+              class="nav-link d-flex cursor-pointer align-items-center"
+            >
+              <i
+                class="material-icons opacity-6 me-2 text-md"
+                :class="getTextColor()"
+                >card_giftcard</i
+              >
+              Lista de presentes
+            </RouterLink>
+          </li>
           <li class="nav-item dropdown dropdown-hover mx-2">
             <RouterLink
               :to="{ name: 'confirmation' }"

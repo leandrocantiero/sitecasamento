@@ -8,6 +8,7 @@ import ConfirmationView from "../views/LandingPages/Confirmation/ConfirmationVie
 import PartyView from "../views/LandingPages/Party/PartyView.vue";
 import CeremonyView from "../views/LandingPages/Ceremony/CeremonyView.vue";
 import GiftView from "../views/LandingPages/Gift/GiftView.vue";
+import VacationView from "../views/LandingPages/Vacation/VacationView.vue";
 
 import PageHeaders from "../layouts/sections/page-sections/page-headers/HeadersView.vue";
 import PageFeatures from "../layouts/sections/page-sections/features/FeaturesView.vue";
@@ -28,8 +29,18 @@ import ElDropdowns from "../layouts/sections/elements/dropdowns/DropdownsView.vu
 import ElProgressBars from "../layouts/sections/elements/progress-bars/ProgressBarsView.vue";
 import ElToggles from "../layouts/sections/elements/toggles/TogglesView.vue";
 import ElTypography from "../layouts/sections/elements/typography/TypographyView.vue";
-  const router = createRouter({
+const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+
+  base: import.meta.env.BASE_URL,
+
+  scrollBehavior: (to, from, savedPosition) => {
+    if (to.hash) return { selector: to.hash };
+    if (savedPosition) return savedPosition;
+
+    return { left: 0, top: 0 };
+  },
+
   routes: [
     {
       path: "/",
@@ -50,6 +61,10 @@ import ElTypography from "../layouts/sections/elements/typography/TypographyView
       path: "/pages/landing-pages/ceremony",
       name: "ceremony",
       component: CeremonyView,
+    },{
+      path: "/pages/landing-pages/vacation",
+      name: "vacation",
+      component: VacationView,
     },
     {
       path: "/pages/landing-pages/gift",

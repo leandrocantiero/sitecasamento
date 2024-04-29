@@ -37,7 +37,9 @@ import bg0 from "@/assets/img/bg9.jpg";
     </div>
   </header>
 
-  <GodParents id="godparents" />
+  <div id="godparents">
+    <GodParents />
+  </div>
   <Information id="information" />
   <Map id="map" />
   <DefaultFooter />

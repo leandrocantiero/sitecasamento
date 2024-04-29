@@ -50,10 +50,12 @@ export default {
       :title="pro ? 'Pro Element' : null"
     >
       <img
+        style="aspect-ratio: 16/9"
         class="w-100"
         :class="pro && 'opacity-6'"
         :src="image"
         :alt="title"
+        height="285"
         loading="lazy"
       />
       <svg
