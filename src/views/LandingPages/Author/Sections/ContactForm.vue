@@ -28,6 +28,11 @@ function validateData(params) {
     return false;
   }
 
+  if (params.name.length < 5) {
+    error("Informe seu nome completo");
+    return false;
+  }
+
   if (!params.email) {
     error("Informe seu email");
     return false;
@@ -41,6 +46,11 @@ function validateData(params) {
 
   if (!params.phone) {
     error("Informe seu telefone");
+    return false;
+  }
+
+  if (params.phone.length !== 11) {
+    error("Informe um telefone válido");
     return false;
   }
 
