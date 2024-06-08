@@ -60,10 +60,6 @@ defineProps({
             name: "Cerimônia",
             href: "https://www.creative-tim.com/templates/free",
           },
-          {
-            name: "Nós",
-            href: "https://www.creative-tim.com/templates/premium",
-          },
         ],
       },
       {

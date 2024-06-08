@@ -232,18 +232,6 @@ watch(
                         </i>
                         <span>Cerimônia</span>
                       </RouterLink>
-                      <RouterLink
-                        :to="{ name: 'contactus' }"
-                        class="dropdown-item border-radius-md"
-                      >
-                        <i
-                          class="material-icons opacity-6 me-2 text-md"
-                          :class="getIconsColor()"
-                        >
-                          people
-                        </i>
-                        <span>Nós</span>
-                      </RouterLink>
                     </div>
                   </div>
                 </div>
@@ -277,18 +265,6 @@ watch(
                     church
                   </i>
                   <span>Cerimônia</span>
-                </RouterLink>
-                <RouterLink
-                    :to="{ name: 'contactus' }"
-                    class="dropdown-item border-radius-md"
-                >
-                  <i
-                      class="material-icons opacity-6 me-2 text-md"
-                      :class="getIconsColor()"
-                  >
-                    people
-                  </i>
-                  <span>Nós</span>
                 </RouterLink>
               </div>
             </div>
