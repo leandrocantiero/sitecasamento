@@ -42,8 +42,8 @@ import flores from "@/assets/img/flores-rosas.jpeg";
         <div class="col-lg-4 ms-auto mt-lg-0 mt-6">
           <CenteredBlogCard
             :image="flores"
-            title="Igreja Presbiteriana Independente Central"
-            description="R. Siqueira Campos, 815 - Centro, Pres. Prudente - SP."
+            title="Ministério Apostólico Sopro de Deus"
+            description="R. Álvares Machado, 440 - Vila Euclides"
             :action="{
               color: 'bg-gradient-success',
               label: 'Ver no mapa',

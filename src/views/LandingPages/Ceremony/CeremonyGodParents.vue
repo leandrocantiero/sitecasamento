@@ -5,7 +5,6 @@ const godparents = [
   "Eduardo e Lais Bernardes",
   "Claudete e Valter Campagnolo",
   "Maria e Pedro Cantiero",
-  "Hilda e Cícero Ramalho",
   "Talita e Leandro Assis",
   "Vânia e Alexandre Ramalho",
   "Vitor e Fabiane",

@@ -62,9 +62,9 @@ var intervalFunction = setInterval(function () {
             <DefaultInfoCard
               icon="church"
               title="Igreja"
-              description="Igreja Presbiteriana Independente Central, situada no endereço: "
-              linkText="R. Siqueira Campos, 815 - Centro, Pres. Prudente - SP."
-              linkUrl="https://maps.app.goo.gl/NRdRpKYx7niAQbx38"
+              description="Ministério Apostólico Sopro de Deus, situada no endereço: "
+              linkText="R. Álvares Machado, 440 - Vila Euclides"
+              linkUrl="https://maps.app.goo.gl/V1Edk5FnEEkp8PmUA"
             />
             <DefaultInfoCard
               icon="restaurant"

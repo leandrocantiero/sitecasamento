@@ -17,28 +17,7 @@ defineProps({
     type: Array,
     icon: String,
     link: String,
-    default: () => [
-      {
-        icon: '<i class="fab fa-facebook text-lg opacity-8"></i>',
-        link: "https://www.facebook.com/CreativeTim/",
-      },
-      {
-        icon: '<i class="fab fa-twitter text-lg opacity-8"></i>',
-        link: "https://twitter.com/creativetim",
-      },
-      {
-        icon: '<i class="fab fa-dribbble text-lg opacity-8"></i>',
-        link: "https://dribbble.com/creativetim",
-      },
-      {
-        icon: '<i class="fab fa-github text-lg opacity-8"></i>',
-        link: "https://github.com/creativetimofficial",
-      },
-      {
-        icon: '<i class="fab fa-youtube text-lg opacity-8"></i>',
-        link: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w",
-      },
-    ],
+    default: () => [],
   },
   menus: {
     type: Array,
@@ -58,27 +37,19 @@ defineProps({
           },
           {
             name: "Cerimônia",
-            href: "https://www.creative-tim.com/templates/free",
+            href: "/pages/landing-pages/ceremony",
           },
         ],
       },
       {
         name: "Presentes",
         items: [
-          { name: "Lista de presentes", href: "https://iradesign.io/" },
-          {
-            name: "Lua de mel",
-            href: "https://www.creative-tim.com/bits",
-          },
+          { name: "Lista de presentes", href: "/pages/landing-pages/gift" },
         ],
       },
       {
         name: "Outros",
         items: [
-          {
-            name: "Galeria",
-            href: "https://www.creative-tim.com/contact-us",
-          },
           {
             name: "Confirmar presença",
             href: "/pages/landing-pages/confirmation",
@@ -96,9 +67,8 @@ defineProps({
         <div class="col-md-3 mb-4">
           <div>
             <a :href="brand.route">
-              <img :src="brand.logo" class="mb-3 footer-logo" alt="main_logo" />
+              <h6 class="font-weight-bolder mb-4">{{ brand.name }}</h6>
             </a>
-            <h6 class="font-weight-bolder mb-4">{{ brand.name }}</h6>
           </div>
           <div>
             <ul class="d-flex flex-row ms-n3 nav">
