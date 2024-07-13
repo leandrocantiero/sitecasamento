@@ -7,7 +7,7 @@ const godparents = [
   "Maria e Pedro Cantiero",
   "Talita e Leandro Assis",
   "Vânia e Alexandre Ramalho",
-  "Vitor e Fabiane",
+  "Vitor e Amanda Ramalho",
   "Apareido e Luana Bernardes",
   "Paulo e Débora",
 ];

@@ -40,13 +40,10 @@ import pix from "@/assets/img/pix.png";
             <h2 class="">Temos uma lista na havan!</h2>
             <a
                 class="lead"
-                href="https://lista.havan.com.br/Convidado"
+                href="https://lista.havan.com.br/Convidado/ItensListaPresente/743666"
                 target="_blank"
             >Clique aqui para ver</a
             >
-            <p class="lead mt-3">
-              Utilize o código <span class="text-success">26221427-9</span>
-            </p>
           </div>
         </div>
       </div>
