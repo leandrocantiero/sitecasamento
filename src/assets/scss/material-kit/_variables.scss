@@ -28,7 +28,7 @@ $indigo: #596cff !default;
 $purple: #6f42c1 !default;
 $pink: #d63384 !default;
 $red: #f56565 !default;
-$rose: #e91e63 !default;
+$rose: #03045e !default;
 $orange: #fd7e14 !default;
 $yellow: #fbd38d !default;
 $green: #81e6d9 !default;
@@ -53,7 +53,7 @@ $colors: (
 ) !default;
 // scss-docs-end colors-map
 
-$primary: #e91e63 !default;
+$primary: #03045e !default;
 $secondary: #7b809a !default;
 $info: #1a73e8 !default;
 $success: #4caf50 !default;
@@ -77,8 +77,8 @@ $theme-colors: (
 // scss-docs-end theme-colors-map
 
 // Gradient colors
-$primary-gradient: #ec407a !default;
-$primary-gradient-state: #d81b60 !default;
+$primary-gradient: #023e8a !default;
+$primary-gradient-state: #03045e !default;
 
 $secondary-gradient: #747b8a !default;
 $secondary-gradient-state: #495361 !default;

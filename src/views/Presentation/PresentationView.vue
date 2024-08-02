@@ -63,14 +63,15 @@ onUnmounted(() => {
               class="text-white pt-3 mt-n5 me-2"
               :style="{ display: 'inline-block ' }"
             >
-              Andrielly & Leandro
+              Leandro & Andrielly
             </h1>
             <p class="lead text-white px-5 mt-3" :style="{ fontWeight: '500' }">
               Para que todos vejam, e saibam, e considerem, e juntamente
-              entendam que a mão do Senhor fez isto.
+              entendam que a mão do Senhor fez isto. E tudo quanto Deus faz,
+              durará eternamente.
             </p>
             <p class="lead text-white" :style="{ fontWeight: '500' }">
-              Isaías 41:20
+              (Isaías 41:20 e Eclesiástes 03:14)
             </p>
           </div>
         </div>

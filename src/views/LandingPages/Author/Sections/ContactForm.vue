@@ -22,6 +22,9 @@ const { loading, fetchData } = useAxios();
 const { success, error } = useToast();
 const form = ref(null);
 
+import { useRouter } from 'vue-router';
+const router = useRouter();
+
 function validateData(params) {
   if (!params.name) {
     error("Informe seu nome");
@@ -91,6 +94,7 @@ const sendEmail = function () {
     .then(() => {
       success("Obrigado por confirmar sua presença :D");
       form.value?.reset();
+      router.push({ name: "gift" });
     })
     .catch((err) => {
       error(

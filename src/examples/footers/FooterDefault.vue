@@ -8,7 +8,7 @@ defineProps({
     logo: String,
     route: "",
     default: () => ({
-      name: "Andrielly & Leandro",
+      name: "Leandro & Andrielly",
       logo: logoDark,
       route: "/",
     }),

@@ -133,7 +133,7 @@ watch(
         title="Designed and Coded by Creative Tim"
         data-placement="bottom"
       >
-        Andrielly & Leandro
+        Leandro & Andrielly
       </RouterLink>
       <RouterLink
         class="navbar-brand d-block d-md-none"
@@ -147,7 +147,7 @@ watch(
         title="Designed and Coded by Creative Tim"
         data-placement="bottom"
       >
-        Andrielly & Leandro
+        Leandro & Andrielly
       </RouterLink>
       <button
         class="navbar-toggler shadow-none ms-2"

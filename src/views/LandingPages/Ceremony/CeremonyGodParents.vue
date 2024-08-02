@@ -33,7 +33,7 @@ const godparents = [
         <div class="col-6">
           <FilledInfoCard
             class="pt-4 px-4"
-            :color="{ text: 'white', background: 'bg-gradient-success' }"
+            :color="{ text: 'white', background: 'bg-gradient-primary' }"
             :icon="{ component: 'people', color: 'white' }"
             title="Luzinete e Valberto Ramalho"
             description="Pais da noiva"
@@ -42,7 +42,7 @@ const godparents = [
         <div class="col-6">
           <FilledInfoCard
             class="pt-4 px-4"
-            :color="{ text: 'white', background: 'bg-gradient-success' }"
+            :color="{ text: 'white', background: 'bg-gradient-primary' }"
             :icon="{ component: 'people', color: 'white' }"
             title="Alessandra e Claudivelto Campagnolo"
             description="Pais do noivo"
@@ -58,7 +58,7 @@ const godparents = [
         >
           <FilledInfoCard
             class="pt-4 px-4"
-            :color="{ text: 'white', background: 'bg-gradient-info' }"
+            :color="{ text: 'white', background: 'bg-gradient-danger' }"
             :icon="{ component: 'filter_vintage', color: 'white' }"
             :description="godparent"
             description-class="text-sm"
