@@ -10,6 +10,7 @@ const godparents = [
   "Vitor e Amanda Ramalho",
   "Apareido e Luana Bernardes",
   "Paulo e Débora",
+  "Milton e Gisele",
 ];
 </script>
 
