@@ -2,13 +2,13 @@
 import FilledInfoCard from "@/examples/cards/infoCards/FilledInfoCard.vue";
 
 const godparents = [
-  "Eduardo e Lais Bernardes",
-  "Claudete e Valter Campagnolo",
-  "Maria e Pedro Cantiero",
-  "Talita e Leandro Assis",
-  "Vânia e Alexandre Ramalho",
-  "Vitor e Amanda Ramalho",
-  "Apareido e Luana Bernardes",
+  "Eduardo e Lais",
+  "Claudete e Valter",
+  "Maria e Pedro",
+  "Talita e Leandro",
+  "Vânia e Alexandre",
+  "Vitor e Amanda",
+  "Apareido e Luana",
   "Paulo e Débora",
   "Milton e Gisele",
 ];
@@ -37,7 +37,6 @@ const godparents = [
             :color="{ text: 'white', background: 'bg-gradient-primary' }"
             :icon="{ component: 'people', color: 'white' }"
             title="Luzinete e Valberto Ramalho"
-            description="Pais da noiva"
           />
         </div>
         <div class="col-6">
@@ -46,7 +45,6 @@ const godparents = [
             :color="{ text: 'white', background: 'bg-gradient-primary' }"
             :icon="{ component: 'people', color: 'white' }"
             title="Alessandra e Claudivelto Campagnolo"
-            description="Pais do noivo"
           />
         </div>
       </div>
@@ -59,7 +57,7 @@ const godparents = [
         >
           <FilledInfoCard
             class="pt-4 px-4"
-            :color="{ text: 'white', background: 'bg-gradient-danger' }"
+            :color="{ text: 'white', background: 'bg-gradient-primary' }"
             :icon="{ component: 'filter_vintage', color: 'white' }"
             :description="godparent"
             description-class="text-sm"
