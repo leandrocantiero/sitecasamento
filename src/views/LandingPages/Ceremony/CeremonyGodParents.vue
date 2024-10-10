@@ -36,7 +36,7 @@ const godparents = [
             class="pt-4 px-4"
             :color="{ text: 'white', background: 'bg-gradient-primary' }"
             :icon="{ component: 'people', color: 'white' }"
-            title="Luzinete e Valberto Ramalho"
+            title="Luzinete e Valberto"
           />
         </div>
         <div class="col-6">
@@ -44,7 +44,7 @@ const godparents = [
             class="pt-4 px-4"
             :color="{ text: 'white', background: 'bg-gradient-primary' }"
             :icon="{ component: 'people', color: 'white' }"
-            title="Alessandra e Claudivelto Campagnolo"
+            title="Alessandra e Claudivelto"
           />
         </div>
       </div>
