@@ -39,7 +39,7 @@ import pix from "@/assets/img/pix.png";
           <div class="col-lg-6 mx-auto">
             <h2 class="">Temos uma lista na havan!</h2>
             <a
-                class="lead"
+                class="lead text-danger"
                 href="https://lista.havan.com.br/Convidado/ItensListaPresente/743666"
                 target="_blank"
             >Clique aqui para ver</a
@@ -51,11 +51,21 @@ import pix from "@/assets/img/pix.png";
       <div class="row">
         <div class="row text-center my-sm-5 mt-5">
           <div class="col-lg-6 mx-auto">
-            <h2 class="">Caso prefira dar seu presente em dinheiro</h2>
-            <p
-                class="lead"
-            >até preferimos assim :D</p>
+            <h2 class="">Também temos uma lista na Magazine Luiza</h2>
+            <a
+                class="lead text-danger"
+                href="https://www.querodecasamento.com.br/lista-de-casamento/leandro-campagnolo-andrielly-ramalho"
+                target="_blank"
+            >Clique aqui para ver</a
+            >
+          </div>
+        </div>
+      </div>
 
+      <div class="row">
+        <div class="row text-center my-sm-5 mt-5">
+          <div class="col-lg-6 mx-auto">
+            <h2 class="">Caso prefira dar seu presente em dinheiro</h2>
             <img :src="pix">
           </div>
         </div>
