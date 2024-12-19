@@ -141,7 +141,7 @@ onMounted(() => {
                           href="https://maps.app.goo.gl/NRdRpKYx7niAQbx38"
                           target="_blank"
                           class="text-sm opacity-8 text-white"
-                          >R. Siqueira Campos, 815 - Centro, Pres. Prudente -
+                          >R. Álvares Machado, 440 - Vila Euclides, Pres. Prudente -
                           SP.</a
                         >
                       </div>
